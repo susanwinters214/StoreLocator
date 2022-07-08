@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <style>
+        body{font-family:arial;
+            line-height:1.5}
+            .center {
+                text-align: center;
+                border: 3px solid black;
+                background-color: #D2042D;
+              }
+            
+              h1, .directions{color:white}
+              aside{background-color:white;color:black;}
+              #testInfo{margin-top:25px; border:none; text-align: center;background-color: white;}
+    </style>
+
+</head>
+<body>
+    <main class="center">
+    <h1>Store Locator Demo</h1>
+   <span class="directions">Enter your zip code:</span>  <input type="text" id="myZipCode" /> 
+    <input type="submit" id="myBtn" onclick=searchForDealer(myZipCode.value) />
+     <aside>
+    <p id="nothing"></p>
+    <p id="searchResults"> </p>
+</aside>
+</main>
+
+<div id="testInfo" class="center">Test one of the following zip codes: <br />
+   <p>90210, 91016, 75338, 70210, 85111, 80010, 85338, 80210, 95111, 91730, 95338, 90210, 65111, 65222, 65338, 60210, 90215, 45222, 45338, 40210</p> </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
